@@ -88,3 +88,24 @@ p{
     left: 0;
     border-radius: inherit;
 }
+  @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    .image, .text{
+        width: 100%;
+        max-width: none;
+        margin: 10px 0;
+    }
+  }
+  @media (min-width: 760px) {
+    .container{
+        height: 100vh;
+    }
+    .image, .text {
+        width: 50%;
+        max-width: 500px;
+        margin: 10px;
+    }
+  }
